@@ -5616,7 +5616,7 @@ fs-extra@^4.0.2:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^8.1.0:
+fs-extra@^8.0.1, fs-extra@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
@@ -5855,6 +5855,15 @@ gatsby-plugin-page-creator@^3.9.0:
     globby "^11.0.3"
     lodash "^4.17.21"
 
+gatsby-plugin-podcast-feed@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-podcast-feed/-/gatsby-plugin-podcast-feed-0.1.0.tgz#4c6ba3b038959a8cdc46fc484fd1400a8b27fb1c"
+  integrity sha512-mYuheuEr0X588JU0XhyPMEng91WQdTKjFTxixuVEV/3BBEsfYUKVoQr2hMpP0s7Iw5a7mMk6ahg43bzItnBmVA==
+  dependencies:
+    fs-extra "^8.0.1"
+    lodash "^4.17.11"
+    rss "^1.2.2"
+
 gatsby-plugin-react-helmet@^4.9.0:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.9.0.tgz#b4ac100a33db68a2a55b85d954f4e23b5c210b03"
@@ -5979,6 +5988,13 @@ gatsby-recipes@^0.20.0:
     ws "^7.3.0"
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
+
+gatsby-remark-audio@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-audio/-/gatsby-remark-audio-1.0.2.tgz#298a05ddad1e697112a403c943801cc2c6947515"
+  integrity sha512-AJ7wYagKjVhLYqdN17eYeDct9BbglmIfQIhXRh5fIHpL8PLHqBhiiQ91yax5y2y7niW7MJdPcFOqcP3Bl9uECw==
+  dependencies:
+    unist-util-visit "^1.4.0"
 
 gatsby-remark-copy-linked-files@^4.6.0:
   version "4.6.0"
@@ -12967,7 +12983,7 @@ unist-util-visit-parents@^3.0.0, unist-util-visit-parents@^3.1.1:
     "@types/unist" "^2.0.0"
     unist-util-is "^4.0.0"
 
-unist-util-visit@^1.1.0:
+unist-util-visit@^1.1.0, unist-util-visit@^1.4.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
