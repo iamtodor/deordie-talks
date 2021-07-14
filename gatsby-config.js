@@ -3,7 +3,7 @@ const feedOptions = {
   description: "description",
   feed_url: "https://talks.deordie.org/rss.xml",
   site_url: "https://talks.deordie.org",
-  image_url: "http://example.com/icon.png",
+  image_url: "https://user-images.githubusercontent.com/408149/113920628-af5bbb80-97ed-11eb-91df-523cf5d27254.png",
   managingEditor: "Pasha Finkelshteyn",
   webMaster: "Pasha Finkelshteyn",
   copyright: "2021 DE or Die",
@@ -30,7 +30,7 @@ const feedOptions = {
     {
       "itunes:image": {
         _attr: {
-          href: "http://example.com/podcasts/everything/AllAboutEverything.jpg",
+          href: "https://user-images.githubusercontent.com/408149/113920628-af5bbb80-97ed-11eb-91df-523cf5d27254.png",
         },
       },
     },
@@ -55,13 +55,13 @@ const feedOptions = {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `DE or Die: Talks`,
     author: {
       name: `DE or Die`,
     },
     description: `Podcast by organizers of DE or Die meetups`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `_deordie`,
     },
   },
   plugins: [
