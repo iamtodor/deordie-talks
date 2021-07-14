@@ -1,12 +1,12 @@
 const feedOptions = {
-  title: "De or Die: Talks",
+  title: "DE or DIE: Talks",
   description: "description",
   feed_url: "https://talks.deordie.org/rss.xml",
   site_url: "https://talks.deordie.org",
   image_url: "https://user-images.githubusercontent.com/408149/113920628-af5bbb80-97ed-11eb-91df-523cf5d27254.png",
   managingEditor: "Pasha Finkelshteyn",
   webMaster: "Pasha Finkelshteyn",
-  copyright: "2021 DE or Die",
+  copyright: "2021 DE or DIE",
   language: "ru",
   categories: ["IT", "Data Enginerring"],
   pubDate: "May 20, 2019 04:00:00 GMT",
@@ -16,7 +16,7 @@ const feedOptions = {
   },
   custom_elements: [
     { "itunes:subtitle": "Data enginerring from Data Engneers" },
-    { "itunes:author": "DE or Die" },
+    { "itunes:author": "DE or DIE" },
     {
       "itunes:summary":
         "Here we are discussing topics and news somehow related to the data engineering",
@@ -55,11 +55,11 @@ const feedOptions = {
 
 module.exports = {
   siteMetadata: {
-    title: `DE or Die: Talks`,
+    title: `DE or DIE: Talks`,
     author: {
-      name: `DE or Die`,
+      name: `DE or DIE`,
     },
-    description: `Podcast by organizers of DE or Die meetups`,
+    description: `Podcast by organizers of DE or DIE meetups`,
     social: {
       twitter: `_deordie`,
     },
