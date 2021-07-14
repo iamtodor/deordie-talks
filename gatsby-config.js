@@ -1,7 +1,7 @@
 const feedOptions = {
   title: "De or Die: Talks",
   description: "description",
-  feed_url: "https://talks.deordie.org/feed.xml",
+  feed_url: "https://talks.deordie.org/rss.xml",
   site_url: "https://talks.deordie.org",
   image_url: "http://example.com/icon.png",
   managingEditor: "Pasha Finkelshteyn",
@@ -57,11 +57,9 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `DE or Die`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Podcast by organizers of DE or Die meetups`,
     social: {
       twitter: `kylemathews`,
     },
