@@ -9,7 +9,7 @@ const feedOptions = {
   webMaster: "Pasha Finkelshteyn",
   copyright: "2021 DE or DIE",
   language: "ru",
-  categories: ["News", "Technology"],
+  categories: ["Technology"],
   pubDate: "July 15, 2021 04:00:00 GMT",
   ttl: "60",
   custom_namespaces: {
@@ -17,6 +17,7 @@ const feedOptions = {
   },
   custom_elements: [
     { "itunes:subtitle": "Data engineering from Data Engineers" },
+    { "itunes:explicit": "false" },
     { "itunes:author": "DE or DIE" },
     {
       "itunes:summary":
@@ -40,13 +41,6 @@ const feedOptions = {
         {
           _attr: {
             text: "Technology",
-          },
-        },
-        {
-          "itunes:category": {
-            _attr: {
-              text: "News",
-            },
           },
         },
       ],
