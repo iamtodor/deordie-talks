@@ -5871,13 +5871,12 @@ gatsby-plugin-page-creator@^3.9.0:
     globby "^11.0.3"
     lodash "^4.17.21"
 
-gatsby-plugin-podcast-feed@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-podcast-feed/-/gatsby-plugin-podcast-feed-0.1.0.tgz#4c6ba3b038959a8cdc46fc484fd1400a8b27fb1c"
-  integrity sha512-mYuheuEr0X588JU0XhyPMEng91WQdTKjFTxixuVEV/3BBEsfYUKVoQr2hMpP0s7Iw5a7mMk6ahg43bzItnBmVA==
+gatsby-plugin-podcast-rss-feed@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-podcast-rss-feed/-/gatsby-plugin-podcast-rss-feed-0.1.5.tgz#ae6b67909fc5c322edc8a0952990fc7cab62b05e"
+  integrity sha512-unKOH02sLai7HUcIbkaA0HPUcphSsrvp3sYQmnpKHUvjeEIbAmTsrIr/N7SoUPOqYjG0pD5H7CmNoG5Ml8xtPQ==
   dependencies:
     fs-extra "^8.0.1"
-    lodash "^4.17.11"
     rss "^1.2.2"
 
 gatsby-plugin-react-helmet@^4.9.0:

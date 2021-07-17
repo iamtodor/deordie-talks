@@ -7,9 +7,7 @@ url: https://asm0dey.ru/p/de-or-die-talks-001.mp3
 categories:
   - Data Quality
   - Data 
-tags:
-  - Data Quality
-  - Data 
+size: 0
 ---
 
 Пилотный выпуск подкаста DE or DIE

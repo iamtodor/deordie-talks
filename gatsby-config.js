@@ -174,7 +174,7 @@ module.exports = {
     //},
     //},
     {
-      resolve: `gatsby-plugin-podcast-feed`,
+      resolve: `gatsby-plugin-podcast-rss-feed`,
       options: {
         feedOptions,
       },
