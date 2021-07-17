@@ -3,7 +3,8 @@ const feedOptions = {
   description: "description",
   feed_url: "https://talks.deordie.org/rss.xml",
   site_url: "https://talks.deordie.org",
-  image_url: "https://user-images.githubusercontent.com/408149/113920628-af5bbb80-97ed-11eb-91df-523cf5d27254.png",
+  image_url:
+    "https://user-images.githubusercontent.com/408149/113920628-af5bbb80-97ed-11eb-91df-523cf5d27254.png",
   managingEditor: "Pasha Finkelshteyn",
   webMaster: "Pasha Finkelshteyn",
   copyright: "2021 DE or DIE",
@@ -84,16 +85,16 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: "gatsby-remark-audio",
-            options: {
-              preload: "auto",
-              loop: false,
-              controls: true,
-              muted: false,
-              autoplay: false,
-            },
-          },
+          // {
+          //   resolve: "gatsby-remark-audio",
+          //   options: {
+          //     preload: "auto",
+          //     loop: false,
+          //     controls: true,
+          //     muted: false,
+          //     autoplay: false,
+          //   },
+          // },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -192,6 +193,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

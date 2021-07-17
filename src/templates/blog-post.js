@@ -1,10 +1,12 @@
+import { graphql, Link } from "gatsby"
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-
+// import ReactJkMusicPlayer from "react-jinke-music-player"
+import "react-jinke-music-player/assets/index.css"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import loadable from '@loadable/component'
+const ReactJkMusicPlayer = loadable(() => import('react-jinke-music-player'))
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -25,6 +27,17 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
+        <ReactJkMusicPlayer
+          remember
+          mode={"full"}
+          showMediaSession
+          audioLists={[
+            {
+              name: post.frontmatter.title,
+              musicSrc: post.frontmatter.url,
+            },
+          ]}
+        />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
