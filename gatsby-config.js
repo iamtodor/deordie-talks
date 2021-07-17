@@ -1,6 +1,6 @@
 const feedOptions = {
   title: "DE or DIE: Talks",
-  description: "description",
+  description: "Here we are discussing topics and news somehow related to the data engineering",
   feed_url: "https://talks.deordie.org/rss.xml",
   site_url: "https://talks.deordie.org",
   image_url:
@@ -9,14 +9,14 @@ const feedOptions = {
   webMaster: "Pasha Finkelshteyn",
   copyright: "2021 DE or DIE",
   language: "ru",
-  categories: ["IT", "Data Enginerring"],
-  pubDate: "May 20, 2019 04:00:00 GMT",
+  categories: ["News", "Technology"],
+  pubDate: "July 15, 2021 04:00:00 GMT",
   ttl: "60",
   custom_namespaces: {
     itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd",
   },
   custom_elements: [
-    { "itunes:subtitle": "Data enginerring from Data Engneers" },
+    { "itunes:subtitle": "Data engineering from Data Engineers" },
     { "itunes:author": "DE or DIE" },
     {
       "itunes:summary":
@@ -24,7 +24,7 @@ const feedOptions = {
     },
     {
       "itunes:owner": [
-        { "itunes:name": "Pasha Finkelshteyn" },
+        { "itunes:name": "DE or DIE" },
         { "itunes:email": "pavel.finkelshten@gmail.com" },
       ],
     },
@@ -45,7 +45,7 @@ const feedOptions = {
         {
           "itunes:category": {
             _attr: {
-              text: "Gadgets",
+              text: "News",
             },
           },
         },
@@ -182,15 +182,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Talks about data engineering things`,
+        short_name: `DE or DIE: Talks`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `browser`,
         icon: `src/images/deordie-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
 

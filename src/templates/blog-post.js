@@ -29,7 +29,8 @@ const BlogPostTemplate = ({ data, location }) => {
         </header>
         <ReactJkMusicPlayer
           remember
-          mode={"full"}
+          mode="full"
+          theme="auto"
           showMediaSession
           audioLists={[
             {
