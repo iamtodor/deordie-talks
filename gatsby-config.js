@@ -32,7 +32,7 @@ const feedOptions = {
     {
       "itunes:image": {
         _attr: {
-          href: "https://user-images.githubusercontent.com/408149/113920628-af5bbb80-97ed-11eb-91df-523cf5d27254.png",
+          href: "https://raw.githubusercontent.com/deordie/deordie-talks/main/src/images/deordie-icon_upscaled.png",
         },
       },
     },
