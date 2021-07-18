@@ -1,6 +1,7 @@
 const feedOptions = {
   title: "DE or DIE: Talks",
-  description: "Here we are discussing topics and news somehow related to the data engineering",
+  description:
+    "Here we are discussing topics and news somehow related to the data engineering",
   feed_url: "https://talks.deordie.org/rss.xml",
   site_url: "https://talks.deordie.org",
   image_url:
@@ -76,9 +77,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
           // {
           //   resolve: "gatsby-remark-audio",
           //   options: {
@@ -168,7 +170,7 @@ module.exports = {
     //},
     //},
     {
-      resolve: `gatsby-plugin-podcast-rss-feed`,
+      resolve: `gatsby-mdx-podcast-feed`,
       options: {
         feedOptions,
       },

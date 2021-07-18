@@ -1,14 +1,12 @@
 import { graphql, Link } from "gatsby"
 import * as React from "react"
-// import ReactJkMusicPlayer from "react-jinke-music-player"
-import "react-jinke-music-player/assets/index.css"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import loadable from '@loadable/component'
-const ReactJkMusicPlayer = loadable(() => import('react-jinke-music-player'))
+import { MDXRenderer } from "gatsby-plugin-mdx"
+
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
@@ -27,22 +25,8 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <ReactJkMusicPlayer
-          remember
-          mode="full"
-          theme="auto"
-          showMediaSession
-          audioLists={[
-            {
-              name: post.frontmatter.title,
-              musicSrc: post.frontmatter.url,
-            },
-          ]}
-        />
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+
+        <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
         <hr />
         <footer>
           <Bio />
@@ -91,17 +75,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -109,7 +93,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }
