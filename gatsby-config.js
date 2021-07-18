@@ -27,7 +27,7 @@ const feedOptions = {
     {
       "itunes:owner": [
         { "itunes:name": "DE or DIE" },
-        { "itunes:email": "pavel.finkelshten@gmail.com" },
+        { "itunes:email": "digest@deordie.org" },
       ],
     },
     {
