@@ -18,7 +18,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           edges {
             node {
               excerpt
-              html
+              body
               id
               frontmatter {
                 title

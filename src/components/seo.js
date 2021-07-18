@@ -35,6 +35,14 @@ const Seo = ({ description, lang, meta, title }) => {
       htmlAttributes={{
         lang,
       }}
+      link={[
+        {
+          rel: "alternate",
+          type: "application/rss+xml",
+          title: "Subscribe to new episodes",
+          href: "https://talks.deordie.org/rss.xml"
+        }
+      ]}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
