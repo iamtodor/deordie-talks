@@ -61,18 +61,18 @@ const Layout = ({ location, title, children }) => {
         <OutboundLink
           target="_blank"
           href="https://podcasts.google.com/feed/aHR0cHM6Ly90YWxrcy5kZW9yZGllLm9yZy9yc3MueG1s"
-          title="Stitcher (pending)"
+          title="Google Podcasts"
           rel="noreferrer"
         >
-          <StaticImage
-            formats={["AUTO", "WEBP", "AVIF"]}
-            src="../images/google-podcast.svg"
-            width={50}
-            height={50}
-            quality={95}
-            alt="Google Podcasts (pending)"
-            title="Google Podcasts (pending)"
-          />
+            <StaticImage
+              formats={["AUTO", "WEBP", "AVIF"]}
+              src="../images/google-podcast.svg"
+              width={50}
+              height={50}
+              quality={95}
+              alt="Google Podcasts"
+              title="Google Podcasts"
+            />
         </OutboundLink>
         {` `}
         <OutboundLink
