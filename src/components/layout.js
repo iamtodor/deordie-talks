@@ -4,9 +4,10 @@ import { MDXProvider } from "@mdx-js/react"
 import "react-jinke-music-player/assets/index.css"
 import loadable from "@loadable/component"
 import { StaticImage } from "gatsby-plugin-image"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const ReactJkMusicPlayer = loadable(() => import("react-jinke-music-player"))
-const shortcodes = { ReactJkMusicPlayer }
+const shortcodes = { ReactJkMusicPlayer, OutboundLink }
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -41,7 +42,7 @@ const Layout = ({ location, title, children }) => {
           />
         </Link>
         {` `}
-        <a
+        <OutboundLink
           target="_blank"
           href="https://podcasts.apple.com/us/podcast/de-or-die-talks/id1577026407"
           title="Apple Podcasts"
@@ -55,42 +56,26 @@ const Layout = ({ location, title, children }) => {
             quality={95}
             alt="Apple Podcasts"
           />
-        </a>
+        </OutboundLink>
         {` `}
-        <a
+        <OutboundLink
           target="_blank"
           href="https://podcasts.google.com/feed/aHR0cHM6Ly90YWxrcy5kZW9yZGllLm9yZy9yc3MueG1s"
           title="Stitcher (pending)"
           rel="noreferrer"
         >
-            <StaticImage
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/google-podcast.svg"
-              width={50}
-              height={50}
-              quality={95}
-              alt="Google Podcasts (pending)"
-              title="Google Podcasts (pending)"
-            />
-        </a>
-        {` `}
-        <a
-          target="_blank"
-          href="https://www.stitcher.com/show/643004"
-          title="Stitcher (pending)"
-          rel="noreferrer"
-        >
           <StaticImage
             formats={["AUTO", "WEBP", "AVIF"]}
-            src="../images/stitcher.png"
+            src="../images/google-podcast.svg"
             width={50}
             height={50}
             quality={95}
-            alt="Stitcher (pending)"
+            alt="Google Podcasts (pending)"
+            title="Google Podcasts (pending)"
           />
-        </a>
+        </OutboundLink>
         {` `}
-        <a
+        <OutboundLink
           target="_blank"
           href="https://www.subscribeonandroid.com/talks.deordie.org/rss.xml"
           title="Subscribe on Android"
@@ -104,13 +89,13 @@ const Layout = ({ location, title, children }) => {
             quality={95}
             alt="Subscribe on Android"
           />
-        </a>
+        </OutboundLink>
       </p>
       <MDXProvider components={shortcodes}>{children}</MDXProvider>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <OutboundLink href="https://www.gatsbyjs.com">Gatsby</OutboundLink>
       </footer>
     </div>
   )
