@@ -68,16 +68,16 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         {
           "itunes:image": {
             _attr: {
-              href: feedOptions.image_url
-            }
-          }
-        }
+              href: feedOptions.image_url,
+            },
+          },
+        },
       ],
       enclosure: {
         url,
         size,
-        type: "audio/mpeg"
-      }
+        type: "audio/mpeg",
+      },
     })
   })
 

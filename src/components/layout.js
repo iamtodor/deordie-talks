@@ -64,15 +64,15 @@ const Layout = ({ location, title, children }) => {
           title="Google Podcasts"
           rel="noreferrer"
         >
-            <StaticImage
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/google-podcast.svg"
-              width={50}
-              height={50}
-              quality={95}
-              alt="Google Podcasts"
-              title="Google Podcasts"
-            />
+          <StaticImage
+            formats={["AUTO", "WEBP", "AVIF"]}
+            src="../images/google-podcast.svg"
+            width={50}
+            height={50}
+            quality={95}
+            alt="Google Podcasts"
+            title="Google Podcasts"
+          />
         </OutboundLink>
         {` `}
         <OutboundLink
